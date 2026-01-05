@@ -9,15 +9,16 @@ const utenti = [
 
 function Admin() {
       function handleClick () {
-        alert("cliSei un amministratore");
+        alert("Sei un amministratore");
     }
   
- const componenteUtenti = utenti.map( u => <Utente nome={u} />)
+ const ComponenteUtenti = utenti.map( u => <Utente nome={u} />)
 
   return <div className="page">
+    
     Gli utenti sono 
-    {componenteUtenti}
-    <Button callback={handleClick}>Cliccami</Button>
+    {ComponenteUtenti}
+    <Button onClick={handleClick}>Cliccami</Button>
     </div> 
   
 }
